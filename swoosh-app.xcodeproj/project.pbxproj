@@ -12,6 +12,7 @@
 		2FE2A6491F2F5349003B4D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE2A6471F2F5349003B4D5A /* Main.storyboard */; };
 		2FE2A64B1F2F5349003B4D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE2A64A1F2F5349003B4D5A /* Assets.xcassets */; };
 		2FE2A64E1F2F5349003B4D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE2A64C1F2F5349003B4D5A /* LaunchScreen.storyboard */; };
+		2FE2A6571F2F635B003B4D5A /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2A6561F2F635B003B4D5A /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		2FE2A64A1F2F5349003B4D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE2A64D1F2F5349003B4D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FE2A64F1F2F5349003B4D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FE2A6561F2F635B003B4D5A /* BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		2FE2A6421F2F5349003B4D5A /* swoosh-app */ = {
 			isa = PBXGroup;
 			children = (
+				2FE2A6551F2F631D003B4D5A /* Views */,
 				2FE2A6431F2F5349003B4D5A /* AppDelegate.swift */,
 				2FE2A6451F2F5349003B4D5A /* ViewController.swift */,
 				2FE2A6471F2F5349003B4D5A /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				2FE2A64F1F2F5349003B4D5A /* Info.plist */,
 			);
 			path = "swoosh-app";
+			sourceTree = "<group>";
+		};
+		2FE2A6551F2F631D003B4D5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FE2A6561F2F635B003B4D5A /* BorderButton.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			files = (
 				2FE2A6461F2F5349003B4D5A /* ViewController.swift in Sources */,
 				2FE2A6441F2F5349003B4D5A /* AppDelegate.swift in Sources */,
+				2FE2A6571F2F635B003B4D5A /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
