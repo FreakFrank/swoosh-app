@@ -114,7 +114,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="Il0-qb-PeU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-fv-jRY" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-fv-jRY" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40346746579999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -141,6 +141,9 @@
                                         <state key="normal" title="MENS">
                                             <color key="titleColor" red="0.97868700659999996" green="1" blue="0.99096335099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="legueSelected:" destination="PTJ-KJ-a2Y" eventType="touchUpInside" id="HFE-iE-7iP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2X-Dz-7jm" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="343" height="50"/>
@@ -152,6 +155,9 @@
                                         <state key="normal" title="WOMENS">
                                             <color key="titleColor" red="0.97868700659999996" green="1" blue="0.99096335099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="legueSelected:" destination="PTJ-KJ-a2Y" eventType="touchUpInside" id="vgh-6T-BFf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gM-1E-cow" customClass="BorderButton" customModule="swoosh_app" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="343" height="50"/>
@@ -163,6 +169,9 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="0.97868700659999996" green="1" blue="0.99096335099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="legueSelected:" destination="PTJ-KJ-a2Y" eventType="touchUpInside" id="pGg-5d-bki"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -217,6 +226,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="wDc-fv-jRY" id="AaU-X7-6Ks"/>
                         <segue destination="W8V-20-7WG" kind="show" identifier="SkillVCSegue" id="NaK-G9-otB"/>
                     </connections>
                 </viewController>
